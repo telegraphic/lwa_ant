@@ -1,4 +1,4 @@
-from lwa_antenna import *
+from lwa_ant.lwa_antenna import *
 
 def test_generate():
     lwa = LwaBeamPattern()

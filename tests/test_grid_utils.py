@@ -1,4 +1,4 @@
-from grid_utils import *
+from lwa_ant.grid_utils import *
 import pylab as plt
 
 def test_meshgrid_pairs():

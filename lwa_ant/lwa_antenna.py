@@ -9,7 +9,9 @@ from scipy.interpolate import interp1d, RectBivariateSpline
 from grid_utils import ungrid, meshgrid_pairs, grid_xyz
 from spherical_coords import thetaphi_to_azel
 
-H5_DATA = "antenna_data.h5"
+from pkg_resources import resource_filename
+
+H5_DATA = resource_filename("lwa_ant", "antenna_data.h5")
 
 class LwaBeamPattern(object):
     """ Beam pattern class for the LWA antenna """

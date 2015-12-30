@@ -1,4 +1,4 @@
-from lwa_observer import *
+from lwa_ant.lwa_observer import *
 import time
 
 def test_radec():
