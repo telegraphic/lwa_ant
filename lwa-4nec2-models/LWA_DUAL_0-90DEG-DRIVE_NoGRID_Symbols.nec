@@ -1,0 +1,112 @@
+CM 
+CE
+SY ZB=0.4	'Z level bottom of antenna blades, default ZB=0.4
+SY ZS=ZB+0.35	'Z level middle Shorting Bar
+SY ZT=ZB+1.04	'Z level top of antenna blades
+SY ZU=ZB+1.06	'Z level top of upper source feed
+SY ZL=ZB+1.02	'Z level top of lower source feed
+SY ZG=0.005	'Z level of Ground Screen
+SY ZMB=ZG+0.01	'Z level bottom of Center Mast
+SY ZMT=ZB+1.0	'Z level top of Center Mast
+GW	1	3	-1.14	0	ZB	-0.7765	0	ZS	0.01
+GW	2	3	1.14	0	ZB	0.7765	0	ZS	0.01
+GW	3	3	1.14	-0.4	ZB	0.7765	-0.264	ZS	0.01
+GW	4	3	-1.14	0.4	ZB	-0.7765	0.264	ZS	0.01
+GW	5	3	-1.14	-0.4	ZB	-0.7765	-0.264	ZS	0.01
+GW	6	3	1.14	0.4	ZB	0.7765	0.264	ZS	0.01
+GW	7	1	-1.14	0.4	ZB	-1.14	0	ZB	0.01
+GW	8	1	-1.14	-0.4	ZB	-1.14	0	ZB	0.01
+GW	9	1	1.14	-0.4	ZB	1.14	0	ZB	0.01
+GW	10	1	1.14	0.4	ZB	1.14	0	ZB	0.01
+GW	11	1	-0.7765	0	ZS	-0.7765	0.264	ZS	0.01
+GW	12	5	0.7765	-0.264	ZS	0.08	0	ZT	0.01
+GW	13	5	0.7765	0.264	ZS	0.08	0	ZT	0.01
+GW	14	1	0.7765	-0.264	ZS	0.7765	0	ZS	0.01
+GW	15	5	-0.7765	0.264	ZS	-0.08	0	ZT	0.01
+GW	16	5	-0.7765	-0.264	ZS	-0.08	0	ZT	0.01
+GW	17	1	0.7765	0.264	ZS	0.7765	0	ZS	0.01
+GW	18	1	-0.7765	-0.264	ZS	-0.7765	0	ZS	0.01
+GW	19	5	0.7765	0	ZS	0.08	0	ZT	0.01
+GW	20	5	-0.7765	0	ZS	-0.08	0	ZT	0.01
+GW	21	1	-0.264	-0.7765	ZS	0	-0.7765	ZS	0.01
+GW	22	1	0.264	-0.7765	ZS	0	-0.7765	ZS	0.01
+GW	23	1	0	-1.14	ZB	-0.4	-1.14	ZB	0.01
+GW	24	1	0	-1.14	ZB	0.4	-1.14	ZB	0.01
+GW	25	5	0	-0.7765	ZS	0	-0.08	ZT	0.01
+GW	26	3	0	-1.14	ZB	0	-0.7765	ZS	0.01
+GW	27	3	-0.4	-1.14	ZB	-0.264	-0.7765	ZS	0.01
+GW	28	3	0.4	-1.14	ZB	0.264	-0.7765	ZS	0.01
+GW	29	5	-0.264	-0.7765	ZS	0	-0.08	ZT	0.01
+GW	30	5	0.264	-0.7765	ZS	0	-0.08	ZT	0.01
+GW	31	1	-0.4	1.14	ZB	0	1.14	ZB	0.01
+GW	32	1	0.4	1.14	ZB	0	1.14	ZB	0.01
+GW	33	1	-0.264	0.7765	ZS	0	0.7765	ZS	0.01
+GW	34	1	0.264	0.7765	ZS	0	0.7765	ZS	0.01
+GW	35	5	0.264	0.7765	ZS	0	0.08	ZT	0.01
+GW	36	5	0	0.7765	ZS	0	0.08	ZT	0.01
+GW	37	5	-0.264	0.7765	ZS	0	0.08	ZT	0.01
+GW	38	3	0.4	1.14	ZB	0.264	0.7765	ZS	0.01
+GW	39	3	0	1.14	ZB	0	0.7765	ZS	0.01
+GW	40	3	-0.4	1.14	ZB	-0.264	0.7765	ZS	0.01
+GW	41	1	-0.08	0	ZT	-0.01	0	ZU	0.01
+GW	42	1	0.08	0	ZT	0.01	0	ZU	0.01
+GW	43	1	-0.01	0	ZU	0.01	0	ZU	0.01
+GW	44	1	0	-0.08	ZT	0	-0.01	ZL	0.01
+GW	45	1	0	0.08	ZT	0	0.01	ZL	0.01
+GW	46	1	0	-0.01	ZL	0	0.01	ZL	0.01
+GW	47	3	0	0	ZMB	0	0	ZMT	.03
+GE	1
+LD	5	1	0	0	24900000	'Antenna Blades
+LD	5	2	0	0	24900000	'Antenna Blades
+LD	5	3	0	0	24900000	'Antenna Blades
+LD	5	4	0	0	24900000	'Antenna Blades
+LD	5	5	0	0	24900000	'Antenna Blades
+LD	5	6	0	0	24900000	'Antenna Blades
+LD	5	7	0	0	24900000	'Antenna Blades
+LD	5	8	0	0	24900000	'Antenna Blades
+LD	5	9	0	0	24900000	'Antenna Blades
+LD	5	10	0	0	24900000	'Antenna Blades
+LD	5	11	0	0	24900000	'Antenna Blades
+LD	5	12	0	0	24900000	'Antenna Blades
+LD	5	13	0	0	24900000	'Antenna Blades
+LD	5	14	0	0	24900000	'Antenna Blades
+LD	5	15	0	0	24900000	'Antenna Blades
+LD	5	16	0	0	24900000	'Antenna Blades
+LD	5	17	0	0	24900000	'Antenna Blades
+LD	5	18	0	0	24900000	'Antenna Blades
+LD	5	19	0	0	24900000	'Antenna Blades
+LD	5	20	0	0	24900000	'Antenna Blades
+LD	5	21	0	0	24900000	'Antenna Blades
+LD	5	22	0	0	24900000	'Antenna Blades
+LD	5	23	0	0	24900000	'Antenna Blades
+LD	5	24	0	0	24900000	'Antenna Blades
+LD	5	25	0	0	24900000	'Antenna Blades
+LD	5	26	0	0	24900000	'Antenna Blades
+LD	5	27	0	0	24900000	'Antenna Blades
+LD	5	28	0	0	24900000	'Antenna Blades
+LD	5	29	0	0	24900000	'Antenna Blades
+LD	5	30	0	0	24900000	'Antenna Blades
+LD	5	31	0	0	24900000	'Antenna Blades
+LD	5	32	0	0	24900000	'Antenna Blades
+LD	5	33	0	0	24900000	'Antenna Blades
+LD	5	34	0	0	24900000	'Antenna Blades
+LD	5	35	0	0	24900000	'Antenna Blades
+LD	5	36	0	0	24900000	'Antenna Blades
+LD	5	37	0	0	24900000	'Antenna Blades
+LD	5	38	0	0	24900000	'Antenna Blades
+LD	5	39	0	0	24900000	'Antenna Blades
+LD	5	40	0	0	24900000	'Antenna Blades
+LD	5	41	0	0	24900000	'Antenna Blades
+LD	5	42	0	0	24900000	'Antenna Blades
+LD	5	43	0	0	58000000	'Antenna Blades
+LD	5	44	0	0	24900000	'Antenna Blades
+LD	5	45	0	0	24900000	'Antenna Blades
+LD	5	46	0	0	58000000	'Antenna Blades
+LD	5	47	0	0	1390000	'Center Post
+LD	5	0	0	0	58000000	'Ground Grid
+GN	2	0	0	0	13	0.005
+EK
+EX	0	43	1	0	1	0	0
+EX	0	46	1	0	0	-1	0
+FR	0	0	0	0	50	0
+EN
